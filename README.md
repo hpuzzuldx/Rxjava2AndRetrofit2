@@ -1,2 +1,5 @@
 # Rxjava2AndRetrofit2
 Rxjava2，Retrofit2最简单的封装
+
+提供SubscriberBase，针对不同应用场景可以实现SubscriberBase也就是Observer，
+完成网络各种情况的监控
