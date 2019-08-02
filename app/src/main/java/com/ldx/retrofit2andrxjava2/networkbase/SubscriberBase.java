@@ -7,12 +7,12 @@ import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 
-public class SubscriberEx<T> implements Observer<T> {
+public class SubscriberBase<T> implements Observer<T> {
     protected final RequestOptions mRequestOptions;
     private ProgressDialog mProgressDialog;
     private Disposable mDisposable;
 
-    public SubscriberEx(RequestOptions requestOptions) {
+    public SubscriberBase(RequestOptions requestOptions) {
         if (requestOptions == null) {
             throw new IllegalArgumentException("RequestOptions cannot be null");
         }

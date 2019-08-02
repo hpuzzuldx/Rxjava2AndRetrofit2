@@ -3,7 +3,7 @@ package com.ldx.retrofit2andrxjava2.netutils;
 import com.ldx.retrofit2andrxjava2.beans.BaseData;
 import com.ldx.retrofit2andrxjava2.constants.NetConstants;
 import com.ldx.retrofit2andrxjava2.networkbase.RequestOptions;
-import com.ldx.retrofit2andrxjava2.networkbase.SubscriberEx;
+import com.ldx.retrofit2andrxjava2.networkbase.SubscriberBase;
 
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
@@ -13,7 +13,7 @@ import javax.net.ssl.SSLHandshakeException;
 
 import retrofit2.HttpException;
 
-public abstract class SubscriberImpl<T extends BaseData> extends SubscriberEx<T> {
+public abstract class SubscriberImpl<T extends BaseData> extends SubscriberBase<T> {
 
     public SubscriberImpl(RequestOptions requestOptions) {
         super(requestOptions);
